@@ -668,7 +668,9 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   .cmenu .cm-sub{font-size:.86rem;margin-top:.2rem}
   .special-dates{grid-template-columns:1fr}
   .founder-grid{grid-template-columns:1fr}
-  .portrait{max-width:26rem;margin-inline:auto}
+  /* single column here, so the photo must scroll with the text
+     instead of sticking and letting the words run behind it */
+  .portrait{position:static;max-width:26rem;margin:0 auto 2.2rem}
 }
 @media (max-width:900px){
   .nav-toggle{display:block}
