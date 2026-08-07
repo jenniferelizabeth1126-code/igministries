@@ -182,6 +182,28 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
     });
   });
 
+  /* On a phone the menu stacks above the form, so the form you just chose
+     is off the bottom of the screen. Bring it up so the tap does something
+     you can actually see.                                                 */
+  function revealForm() {
+    if (window.innerWidth > 1060) return;
+    var forms = document.querySelector('.connect-forms');
+    if (!forms) return;
+
+    var header = document.querySelector('.site-header');
+    var offset = (header && getComputedStyle(header).position === 'sticky')
+      ? header.offsetHeight + 12 : 12;
+
+    window.scrollTo({
+      top: forms.getBoundingClientRect().top + window.pageYOffset - offset,
+      behavior: 'smooth'
+    });
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', revealForm);
+  });
+
   document.querySelectorAll('[data-open-tab]').forEach(function (el) {
     el.addEventListener('click', function () {
       selectTab(el.dataset.openTab);

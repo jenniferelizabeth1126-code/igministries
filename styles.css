@@ -136,12 +136,16 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   padding:clamp(2.5rem,6vh,4.5rem) 0 clamp(4rem,9vh,6rem);
   background:radial-gradient(125% 95% at 50% -8%, #FFFDF8 0%, #FCF8F0 30%, #F7F0E4 58%, #F1E8D8 100%);
 }
-/* slowly rotating ray fan */
+/* slowly rotating ray fan.
+   translate3d and will-change push this onto the phone's graphics chip.
+   Without them mobile browsers render the rays but stop animating them. */
 .hero .rays{
   position:absolute;top:-45vh;left:50%;
   width:210vw;height:210vw;
-  transform:translateX(-50%);
+  transform:translate3d(-50%,0,0);
   transform-origin:50% 20%;
+  backface-visibility:hidden;
+  will-change:transform;
   background:repeating-conic-gradient(from 182deg at 50% 20%,
     rgba(255,255,255,.85) 0deg 1.7deg,
     rgba(255,255,255,0) 1.7deg 7deg);
@@ -161,10 +165,17 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
 .hero .glow{
   position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(58% 42% at 50% 24%, rgba(255,255,255,.65), transparent 72%);
+  will-change:opacity;
   animation:breathe 9s ease-in-out infinite;
 }
-@keyframes sweep{from{transform:translateX(-50%) rotate(0deg)}to{transform:translateX(-50%) rotate(360deg)}}
-@keyframes sweep-back{from{transform:translateX(-50%) rotate(360deg)}to{transform:translateX(-50%) rotate(0deg)}}
+@keyframes sweep{
+  from{transform:translate3d(-50%,0,0) rotate(0deg)}
+  to{transform:translate3d(-50%,0,0) rotate(360deg)}
+}
+@keyframes sweep-back{
+  from{transform:translate3d(-50%,0,0) rotate(360deg)}
+  to{transform:translate3d(-50%,0,0) rotate(0deg)}
+}
 @keyframes breathe{0%,100%{opacity:.62}50%{opacity:1}}
 
 .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center}
@@ -651,7 +662,10 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   .grid-3{grid-template-columns:repeat(2,1fr)}
   .about-grid,.foundation-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
-  .connect-grid{grid-template-columns:1fr}
+  .connect-grid{grid-template-columns:1fr;gap:1.5rem}
+  /* tighter menu on small screens so the form is not pushed so far down */
+  .cmenu{padding:.85rem .9rem}
+  .cmenu .cm-sub{font-size:.86rem;margin-top:.2rem}
   .special-dates{grid-template-columns:1fr}
   .founder-grid{grid-template-columns:1fr}
   .portrait{max-width:26rem;margin-inline:auto}
@@ -671,6 +685,20 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   .header-inner{position:relative}
   .slot{grid-template-columns:1fr;gap:.4rem}
 }
+/* Phones: one ray layer instead of two, a smaller surface to rotate,
+   and a quicker sweep so the movement actually reads on a small screen. */
+@media (max-width:820px){
+  .hero .rays{
+    width:150vh;height:150vh;
+    animation-duration:38s;
+    background:repeating-conic-gradient(from 182deg at 50% 20%,
+      rgba(255,255,255,.9) 0deg 2.4deg,
+      rgba(255,255,255,0) 2.4deg 9deg);
+  }
+  .hero .rays.two{display:none}
+  .hero .glow{animation-duration:6s}
+}
+
 @media (max-width:640px){
   .grid-4,.grid-3,.grid-2{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
