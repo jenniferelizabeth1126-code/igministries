@@ -676,7 +676,28 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   .footer-grid{grid-template-columns:1fr}
   body{font-size:16.5px}
 }
+/* ==========================================================================
+   SCROLL REVEALS
+   The .reveal class is added by script.js, so if the script never runs
+   every element simply stays visible instead of disappearing.
+   ========================================================================== */
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .7s cubic-bezier(.22,.61,.36,1),
+             transform .7s cubic-bezier(.22,.61,.36,1);
+  will-change:opacity, transform;
+}
+.reveal.in{opacity:1;transform:none}
+
+/* side entrances for the two-column sections */
+.reveal.from-left{transform:translateX(-26px)}
+.reveal.from-right{transform:translateX(26px)}
+.reveal.from-left.in,
+.reveal.from-right.in{transform:none}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}
 }

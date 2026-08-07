@@ -47,6 +47,14 @@ are listed in a comment right above them. Change the two values and
 the whole site updates.
 
 
+SCROLL ANIMATION
+----------------
+Headings, cards, and images fade and lift into place as you scroll,
+with the two-column sections sliding in from the sides. Anyone whose
+computer is set to reduce motion sees the page appear normally with
+no movement at all.
+
+
 PAGE ORDER
 ----------
   1. Hero

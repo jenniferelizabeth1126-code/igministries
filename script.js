@@ -52,6 +52,99 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
     });
   });
 
+
+  /* ---------- reveal things as they scroll into view ----------
+     Elements are only hidden after this runs, so if the script fails
+     the page still shows everything.                                */
+  (function () {
+    var reduced = window.matchMedia &&
+                  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !('IntersectionObserver' in window)) return;
+
+    var SELECTOR = [
+      '.eyebrow', '.section-title', '.section-lead', '.prose',
+      '.cta-row', '.mission-pull', '.about-body', '.about-card',
+      '.verse-block', '.price-card', '.platform-note', '.schedule',
+      '.special', '.card', '.topic', '.value', '.service',
+      '.member-box', '.portrait', '.faq-group', '.faq-list',
+      '.connect-grid', '.socials', '.give-note'
+    ].join(',');
+
+    var picked = [];
+
+    /* the hero animates on its own, and the header must never hide */
+    Array.prototype.forEach.call(
+      document.querySelectorAll('section:not(.hero), .site-footer'),
+      function (section) {
+        var found = Array.prototype.filter.call(
+          section.querySelectorAll(SELECTOR),
+          function (el) {
+            /* skip anything already inside another revealing element */
+            for (var p = el.parentElement; p && p !== section; p = p.parentElement) {
+              if (p.matches && p.matches(SELECTOR)) return false;
+            }
+            return true;
+          }
+        );
+
+        found.forEach(function (el, i) {
+          el.classList.add('reveal');
+
+          /* two-column sections come in from the sides */
+          if (el.matches('.about-card, .verse-block, .member-box')) {
+            el.classList.add('from-right');
+          } else if (el.matches('.portrait')) {
+            el.classList.add('from-left');
+          }
+
+          /* stagger, but cap it so nothing lags far behind */
+          el.style.transitionDelay = Math.min(i * 70, 420) + 'ms';
+          picked.push(el);
+        });
+      }
+    );
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+
+    picked.forEach(function (el) { observer.observe(el); });
+
+
+    /* Jumping straight to a section (nav links, or landing on #faq) can
+       skip past elements so the observer never sees them. Sweep for
+       anything at or above the fold and show it.                        */
+    var ticking = false;
+
+    function sweep() {
+      ticking = false;
+      var h = window.innerHeight;
+      for (var i = picked.length - 1; i >= 0; i--) {
+        var el = picked[i];
+        if (el.getBoundingClientRect().top < h) {
+          el.classList.add('in');
+          observer.unobserve(el);
+          picked.splice(i, 1);
+        }
+      }
+      if (!picked.length) window.removeEventListener('scroll', onScroll);
+    }
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(sweep);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    requestAnimationFrame(sweep);
+  })();
+
   /* ---------- FAQ: one click reveals the whole list ---------- */
   var faqToggle = document.getElementById('faqToggle');
   var faqBody = document.getElementById('faqBody');
