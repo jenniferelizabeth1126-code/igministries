@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Illuminate Global Ministries</title>
+<meta name="description" content="An online discipleship and mentorship community helping people know God intimately, become rooted in His Word, receive inner healing and freedom, mature spiritually, and become who He created them to be.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== ICON SPRITE ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-book" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </g>
+    <g id="i-users" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </g>
+    <g id="i-hands" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 22V9a2 2 0 0 0-4 0v5"/><path d="M13 22V9a2 2 0 0 1 4 0v5"/>
+      <path d="M7 14l-2.2 2.2a2 2 0 0 0 0 2.83L7 21"/><path d="M17 14l2.2 2.2a2 2 0 0 1 0 2.83L17 21"/>
+      <path d="M12 7V2"/>
+    </g>
+    <g id="i-heart" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </g>
+    <g id="i-shield" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3 8 3Z"/><path d="m9 12 2 2 4-4"/>
+    </g>
+    <g id="i-spark" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m12 3 2.2 6.3L21 12l-6.8 2.7L12 21l-2.2-6.3L3 12l6.8-2.7z"/>
+    </g>
+    <g id="i-compass" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="m16.2 7.8-2.1 6.4-6.4 2.1 2.1-6.4z"/>
+    </g>
+    <g id="i-flag" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 21V4"/><path d="M4 5h11l-1.5 3.5L15 12H4z"/>
+    </g>
+    <g id="i-flame" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1.1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+    </g>
+    <g id="i-ear" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 8.5a6 6 0 0 1 12 0c0 3-2 4-3 5.5-.8 1.2-.5 3-2.5 3a2.5 2.5 0 0 1-2.5-2.5"/>
+      <path d="M9 9a3 3 0 1 1 5 2.2"/><path d="M6 15v4a2 2 0 0 0 2 2"/>
+    </g>
+    <g id="i-crown" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 7l3.5 4L12 4l5.5 7L21 7v11H3z"/>
+    </g>
+    <g id="i-user" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/>
+    </g>
+    <g id="i-mic" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><path d="M12 19v3"/>
+    </g>
+    <g id="i-pray" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4c-1.1 1.3-2 2.5-2 4v6l-2.5 2.5a1.8 1.8 0 0 0 0 2.5l1.5 1.5H12z"/>
+      <path d="M12 4c1.1 1.3 2 2.5 2 4v6l2.5 2.5a1.8 1.8 0 0 1 0 2.5L15 20.5h-3z"/>
+    </g>
+    <g id="i-heart-bandage" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 13.5c1.4-1.4 2.9-3.1 2.9-5.3A5.4 5.4 0 0 0 16.5 2.9c-1.7 0-2.9.5-4.5 2-1.6-1.5-2.8-2-4.5-2A5.4 5.4 0 0 0 2.1 8.2c0 2.2 1.5 3.9 2.9 5.3L12 20.4z"/>
+      <rect x="7.7" y="8.6" width="8.6" height="4.4" rx="2.2" transform="rotate(-45 12 10.8)"/>
+      <path d="M10.6 10.1v0M13.4 11.5v0M10.6 11.9v0M13.4 9.7v0"/>
+    </g>
+    <g id="i-chain-break" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18.6 12.4 1.7-1.7a4.4 4.4 0 0 0-6.2-6.2l-1.7 1.7"/>
+      <path d="m5.4 11.6-1.7 1.7a4.4 4.4 0 0 0 6.2 6.2l1.7-1.7"/>
+      <path d="m8 2 1.4 2.4M2 8l2.4 1.4M16 22l-1.4-2.4M22 16l-2.4-1.4"/>
+    </g>
+    <g id="i-cross" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2.5v19"/><path d="M6.5 8.5h11"/>
+    </g>
+    <g id="i-medal" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="15.5" r="5.3"/>
+      <path d="M8.6 10.6 6 2.2l6 3 6-3-2.6 8.4"/>
+      <path d="m12 13.2.9 1.9 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2L9.1 15.4l2-.3z"/>
+    </g>
+    <g id="i-crown-person" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7.5 4 9.75 6 12 2.6 14.25 6 16.5 4v3.6h-9z"/>
+      <circle cx="12" cy="12.4" r="3"/>
+      <path d="M5.6 21.5a6.4 6.4 0 0 1 12.8 0"/>
+    </g>
+    <g id="i-megaphone" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10.5v3a1 1 0 0 0 1 1h3l7 4V5.5l-7 4H4a1 1 0 0 0-1 1z"/>
+      <path d="M17.3 9.2a4 4 0 0 1 0 5.6"/>
+      <path d="M20 6.4a7.6 7.6 0 0 1 0 11.2"/>
+    </g>
+    <g id="i-open-book" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.2 6.6c3.1-1.6 6.6-1.6 9.8 0 3.2-1.6 6.7-1.6 9.8 0v10.8c-3.1-1.6-6.6-1.6-9.8 0-3.2-1.6-6.7-1.6-9.8 0z"/>
+      <path d="M12 6.6v10.8"/>
+    </g>
+    <g id="i-shield-plain" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 12.5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3 8 3z"/>
+    </g>
+    <g id="i-scales" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.2v17.6"/><path d="M7.5 20.8h9"/><path d="M4 7h16"/>
+      <path d="M4 7 1.6 12.6a3.4 3.4 0 0 0 4.8 0z"/>
+      <path d="M20 7l2.4 5.6a3.4 3.4 0 0 1-4.8 0z"/>
+    </g>
+    <g id="i-target" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/>
+    </g>
+    <g id="i-grapes" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 8.6V4.4"/>
+      <path d="M12.2 5c1.4-1.8 3.4-2.4 5.4-2-.2 2-1.4 3.6-3.4 4"/>
+      <circle cx="8.6" cy="11.2" r="2.2"/><circle cx="15.4" cy="11.2" r="2.2"/>
+      <circle cx="12" cy="11.2" r="2.2"/>
+      <circle cx="10.3" cy="15" r="2.2"/><circle cx="13.7" cy="15" r="2.2"/>
+      <circle cx="12" cy="18.7" r="2.2"/>
+    </g>
+    <g id="i-hands-heart" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 11.4 9.4 8.9a1.85 1.85 0 0 1 2.6-2.6 1.85 1.85 0 0 1 2.6 2.6z"/>
+      <path d="M4 12.5a2 2 0 0 1 4 0v3"/><path d="M20 12.5a2 2 0 0 0-4 0v3"/>
+      <path d="M4 12.5V16a5.5 5.5 0 0 0 5.5 5.5h5A5.5 5.5 0 0 0 20 16v-3.5"/>
+    </g>
+    <g id="i-kneel" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9.6" cy="5.2" r="2.3"/>
+      <path d="M9.6 7.5c-1.8 0-3.2 1.4-3.2 3.2v2.6"/>
+      <path d="M10.2 9.9c1.8.5 3.3 1.7 4.3 3.3"/>
+      <path d="M6.4 13.3c-2.1 1-3.5 2.8-4 5h18"/>
+    </g>
+    <g id="i-clipboard" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8.6 4H6.5a2 2 0 0 0-2 2v13.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2.1"/>
+      <rect x="8.6" y="2.2" width="6.8" height="3.8" rx="1.2"/>
+      <path d="M8.5 11h7M8.5 14.6h7M8.5 18.2h4"/>
+    </g>
+    <g id="i-arrow" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12h16"/><path d="m13 6 6 6-6 6"/>
+    </g>
+    <g id="i-sun" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+    </g>
+    <g id="i-clock" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+    </g>
+    <g id="i-eye" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/>
+    </g>
+    <g id="i-leaf" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 20A7 7 0 0 1 4 13c0-6 6-10 16-10 0 10-4 16-10 16z"/><path d="M4 21c2-6 5-9 9-11"/>
+    </g>
+    <g id="i-hand" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 11V6.5a1.75 1.75 0 0 0-3.5 0"/><path d="M14.5 10V4.5a1.75 1.75 0 0 0-3.5 0V10"/>
+      <path d="M11 10.5V6a1.75 1.75 0 0 0-3.5 0v8"/>
+      <path d="M18 8.5a1.75 1.75 0 0 1 3.5 0V14a8 8 0 0 1-8 8h-1.5c-2.5 0-4-.8-5.3-2.1l-3-3a1.8 1.8 0 0 1 2.5-2.5L7.5 16"/>
+    </g>
+    <g id="i-download" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>
+    </g>
+    <g id="i-play-square" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="16" rx="2"/><path d="m10 9 5 3-5 3z"/>
+    </g>
+    <g id="i-send" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>
+    </g>
+    <g id="i-check" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m4 12 5 5L20 6"/>
+    </g>
+    <path id="i-play" d="M8 5v14l11-7z" fill="currentColor"/>
+    <path id="i-youtube" fill="currentColor" d="M23 12s0-3.6-.46-5.27a2.6 2.6 0 0 0-1.83-1.84C19.05 4.4 12 4.4 12 4.4s-7.05 0-8.71.49A2.6 2.6 0 0 0 1.46 6.73 27.4 27.4 0 0 0 1 12a27.4 27.4 0 0 0 .46 5.27 2.6 2.6 0 0 0 1.83 1.84c1.66.49 8.71.49 8.71.49s7.05 0 8.71-.49a2.6 2.6 0 0 0 1.83-1.84C23 15.6 23 12 23 12zM9.75 15.5v-7l5.75 3.5z"/>
+    <g id="i-instagram" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+    </g>
+    <path id="i-facebook" fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/>
+    <path id="i-tiktok" fill="currentColor" d="M16.6 2h-3.1v13.6a2.6 2.6 0 1 1-2.6-2.6c.24 0 .47.03.7.09v-3.15a5.9 5.9 0 0 0-.7-.04 5.75 5.75 0 1 0 5.75 5.75V8.9a7 7 0 0 0 4.35 1.5V7.25a4.05 4.05 0 0 1-4.4-5.25z"/>
+  </defs>
+</svg>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top"><img class="nav-mark" src="assets/igm-mark.png" alt="Illuminate Global Ministries"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#teach">Teaching</a>
+      <a href="#rhythm">Rhythm</a>
+      <a href="#personal">Ministry</a>
+      <a href="#resources">Resources</a>
+      <a href="#watch">Watch</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-ghost" href="#give">Donate</a>
+      <a class="btn btn-solid" href="#community">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="rays"></div>
+  <div class="rays two"></div>
+  <div class="glow"></div>
+
+  <div class="wrap hero-inner">
+    <img class="hero-logo" src="assets/igm-logo.png" alt="Illuminate Global Ministries">
+    <p class="tagline">Ignite your faith. Transform your life.</p>
+    <p class="eyebrow">Online Discipleship &amp; Mentorship Community</p>
+    <h1>
+      Know God deeply.
+      <span class="line2">Become whole. Walk in freedom.</span>
+    </h1>
+    <p class="hero-lede">
+      Illuminate Global Ministries is an online community where people are discipled, mentored,
+      supported, healed, and equipped to become who God created them to be.
+    </p>
+    <p class="hero-lede">
+      Through biblical teaching, prayer, mentorship, inner healing, deliverance, and meaningful
+      community, we help people mature in Christ and run their God-given race with courage and boldness.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#community">Join the Community</a>
+      <a class="btn btn-ghost" href="#personal">Explore Personal Ministry</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSION ===================== -->
+<section class="mission" id="mission">
+  <div class="wrap">
+    <p class="eyebrow">Our Mission</p>
+    <h2 class="section-title">Awakened. Equipped. Sent. <em>Illuminate.</em></h2>
+
+    <p>
+      Our heart is to make mature disciples who know God, have an intimate relationship with Him
+      and His Word, recognize His voice, steward their spiritual gifts, and live with the courage
+      and boldness to run their race.
+    </p>
+    <p>
+      We equip people to grow in Christ, receive healing and freedom, understand their calling,
+      serve others, and carry the light of Jesus into their families, communities, workplaces,
+      ministries, and the nations.
+    </p>
+    <p>
+      Then we send them to reproduce what they have received by strengthening others, making
+      disciples, fanning into flame the gifts God has placed within them, and helping keep the
+      fire of devotion burning from one life to another.
+    </p>
+
+    <p class="mission-pull">
+      To illuminate is to carry the light of Christ and ignite faith, freedom, and purpose in others.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-body">
+        <p class="eyebrow">About the Ministry</p>
+        <h2 class="section-title">Discipleship is <em>life together.</em></h2>
+        <p style="margin-top:1.4rem">
+          Illuminate Global Ministries is an online discipleship and mentorship community where
+          people are known, supported, challenged, healed, and equipped to walk with God for themselves.
+        </p>
+        <p>
+          We believe discipleship is more than receiving information. It is learning together,
+          praying together, asking honest questions, applying the Word, receiving mentorship,
+          confronting unhealthy patterns, and allowing God to bring healing and freedom into
+          every area of life.
+        </p>
+        <p>
+          Our community gives people a place to do life together through live discipleship
+          gatherings, prayer calls, mentorship, teaching, book discussions, and personal connection.
+          We also meet in person for deeper fellowship, worship, prayer, teaching, and ministry.
+        </p>
+        <p>
+          We are one Body. We honor one another, love one another, and respect the part God has
+          given each person to play. Each person matters, every gift has purpose, and we grow as
+          every part does its work.
+        </p>
+      </div>
+
+      <aside class="about-card">
+        <p class="big">You do not have to grow, heal, or pursue freedom alone.</p>
+        <p>
+          Ephesians 4 describes leaders equipping God&rsquo;s people for service so the whole Body is
+          built up, reaches maturity, and grows as each part fulfills its role.
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VALUES ===================== -->
+<section class="values" id="values">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Our Values</p>
+      <h2 class="section-title">How we <em>walk together.</em></h2>
+    </div>
+
+    <div class="grid-3">
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+        <h3>Biblical</h3>
+        <p>The Word of God is our foundation and final authority.</p>
+      </article>
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+        <h3>Authentic</h3>
+        <p>Come honestly and allow God to transform you as you grow.</p>
+      </article>
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-hands-heart"/></svg></span>
+        <h3>Honoring</h3>
+        <p>We love, respect, and value every member of the Body of Christ.</p>
+      </article>
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-kneel"/></svg></span>
+        <h3>Humble</h3>
+        <p>We choose servanthood, integrity, accountability, and teachability.</p>
+      </article>
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-clipboard"/></svg></span>
+        <h3>Equipping</h3>
+        <p>We help people know God and walk with Him for themselves.</p>
+      </article>
+      <article class="value">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></span>
+        <h3>Sending</h3>
+        <p>We prepare people to carry Christ into the places God has already placed them.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOUNDATION ===================== -->
+<section class="foundation" id="foundation">
+  <div class="wrap">
+    <div class="foundation-grid">
+      <div>
+        <p class="eyebrow">Our Foundation</p>
+        <h2 class="section-title">The Word of God is <em>our final authority.</em></h2>
+        <p style="margin-top:1.4rem">
+          Everything we believe, teach, and practice is rooted in Scripture and submitted to its truth.
+        </p>
+        <p>
+          The presence and power of the Holy Spirit are central to our culture. We welcome His gifts
+          and leading, including the prophetic, inner healing, and deliverance, while testing
+          everything according to the Word of God.
+        </p>
+        <p>
+          Our desire is to make biblical truth clear and practical, equipping people to apply it in
+          everyday life and build a faith that remains steady beyond a service, prayer call, or
+          temporary emotional moment.
+        </p>
+      </div>
+
+      <div class="verse-block">
+        <blockquote>
+          &ldquo;All Scripture is God-breathed and is useful for teaching, rebuking, correcting and
+          training in righteousness, so that the servant of God may be thoroughly equipped for
+          every good work.&rdquo;
+        </blockquote>
+        <cite>2 Timothy 3:16-17 NIV</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW WE EQUIP ===================== -->
+<section class="equip" id="equip">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">How We Equip</p>
+      <h2 class="section-title">Discipleship that transforms <em>the whole person.</em></h2>
+      <p class="section-lead">
+        True discipleship reaches every area of life, shaping how we believe, pray, heal, serve,
+        lead, relate to others, and respond to God.
+      </p>
+    </div>
+
+    <div class="grid-4">
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+        <h3>Biblical Teaching</h3>
+        <p>Clear, practical teaching that helps people understand Scripture and live according to its truth.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-users"/></svg></span>
+        <h3>Discipleship &amp; Mentorship</h3>
+        <p>Growing through relationship, guidance, accountability, honest conversation, and practical application.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-pray"/></svg></span>
+        <h3>Prayer &amp; Intercession</h3>
+        <p>Building a consistent prayer life and learning to stand in the gap for others.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-heart-bandage"/></svg></span>
+        <h3>Inner Healing</h3>
+        <p>Inviting Jesus into places of pain, rejection, trauma, destructive beliefs, emotional wounds, and unhealthy patterns.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-chain-break"/></svg></span>
+        <h3>Deliverance</h3>
+        <p>Setting the oppressed free through prayer, repentance, renunciation, and the authority of Jesus Christ.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-cross"/></svg></span>
+        <h3>Spiritual Gifts</h3>
+        <p>Recognizing, developing, and stewarding what God has placed within each person.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg></span>
+        <h3>Spiritual Formation</h3>
+        <p>Developing the character, disciplines, obedience, and consistency needed to become a mature follower of Christ.</p>
+      </article>
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-medal"/></svg></span>
+        <h3>Leadership Development</h3>
+        <p>Equipping healthy leaders who serve with humility, integrity, wisdom, and spiritual discernment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMUNITY ===================== -->
+<section class="community" id="community">
+  <div class="wrap center">
+    <p class="eyebrow">Illuminate Discipleship Community</p>
+    <h2 class="section-title">Grow in truth, healing, <em>and freedom.</em></h2>
+    <p class="section-lead">
+      An online mentorship and discipleship experience for people who desire consistent biblical
+      teaching, prayer, support, accountability, healing, and meaningful spiritual community.
+    </p>
+
+    <div class="price-card">
+      <span class="pill">Coming Soon</span>
+      <div class="price">$27<span class="per">Per Month</span></div>
+      <p>
+        Together we study and apply Scripture, receive practical mentorship, address unhealthy
+        patterns, mature in our gifts, and learn how to walk in freedom.
+      </p>
+      <ul class="price-list">
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Live discipleship and mentorship gatherings</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Weekly prayer calls</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Monthly mentorship day</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Community book club and study resources</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Study notes and practical assignments</span></li>
+        <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Prayer and community support</span></li>
+      </ul>
+      <a class="btn btn-light btn-block" href="#connect" data-open-tab="community">Join the Waitlist</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT WE TEACH ===================== -->
+<section class="teach" id="teach">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">What We Teach</p>
+      <h2 class="section-title">Biblical truth for <em>real life.</em></h2>
+      <p class="section-lead">
+        Our teaching helps people understand Scripture, know God personally, receive healing and
+        freedom, mature in character and gifts, and confidently walk out their calling.
+      </p>
+    </div>
+
+    <div class="grid-4">
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+        <h3>Bible Reading &amp; Study</h3>
+        <p>Learn how to understand Scripture in context and apply it faithfully.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-flame"/></svg></span>
+        <h3>Intimacy With God</h3>
+        <p>Develop a personal relationship with the Lord beyond religious activity and routine.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-crown-person"/></svg></span>
+        <h3>Identity in Christ</h3>
+        <p>Live from who God says you are rather than fear, shame, rejection, or performance.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-megaphone"/></svg></span>
+        <h3>Hearing God&rsquo;s Voice</h3>
+        <p>Recognize, test, and respond to the voice and leading of the Lord.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-cross"/></svg></span>
+        <h3>Spiritual Gifts &amp; the Prophetic</h3>
+        <p>Discover and steward spiritual gifts with humility, love, biblical understanding, and accountability.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-pray"/></svg></span>
+        <h3>Prayer &amp; Intercession</h3>
+        <p>Grow in personal prayer and learn to intercede for families, communities, leaders, and nations.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-open-book"/></svg></span>
+        <h3>Spiritual Disciplines</h3>
+        <p>Develop consistent rhythms of Scripture, prayer, fasting, worship, surrender, and obedience.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-heart-bandage"/></svg></span>
+        <h3>Inner Healing &amp; Deliverance</h3>
+        <p>Address wounds, destructive beliefs, spiritual oppression, bondage, and recurring patterns so you can move forward in freedom.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-shield-plain"/></svg></span>
+        <h3>Spiritual Warfare</h3>
+        <p>Recognize spiritual opposition and understand your authority in Christ.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-scales"/></svg></span>
+        <h3>Discernment</h3>
+        <p>Distinguish between truth, emotion, deception, and the leading of the Holy Spirit.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-target"/></svg></span>
+        <h3>Purpose &amp; Calling</h3>
+        <p>Understand how God has uniquely formed and gifted you to serve others.</p>
+      </article>
+      <article class="topic">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-grapes"/></svg></span>
+        <h3>Christlike Character</h3>
+        <p>Allow the fruit of the Spirit to shape how you lead, love, communicate, and live.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMUNITY RHYTHM ===================== -->
+<section class="rhythm" id="rhythm">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Community Rhythm</p>
+      <h2 class="section-title">We grow together through <em>consistent connection.</em></h2>
+      <p class="section-lead">
+        This is not simply a library of content. It is a living community with regular opportunities
+        to pray, learn, receive mentorship, ask questions, and walk out what God is teaching us.
+      </p>
+    </div>
+
+    <p class="platform-note">
+      Our discipleship community lives on <strong>Skool</strong>, where the live teachings,
+      mentorship day, and book club all take place. The <strong>weekly prayer calls are on Zoom
+      and open to everyone</strong>, whether or not you are part of the community.
+    </p>
+
+    <div class="schedule">
+      <div class="slot">
+        <div class="slot-when">Mondays at 6:00 to 7:00 a.m. Pacific</div>
+        <div>
+          <h3>Women&rsquo;s Prayer Call</h3>
+          <p>A weekly space for women to seek the Lord, pray together, and begin the week in His presence. Open to everyone.</p>
+          <span class="where">Zoom</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Wednesdays at 6:00 to 7:00 a.m. Pacific</div>
+        <div>
+          <h3>Corporate Prayer Call</h3>
+          <p>A weekly prayer gathering for men and women to seek the Lord and intercede together. Open to everyone.</p>
+          <span class="where">Zoom</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Every Other Wednesday at 6:45 p.m. Pacific</div>
+        <div>
+          <h3>Live Discipleship &amp; Mentorship</h3>
+          <p>Biblical teaching, practical application, discussion, prayer, and community connection.</p>
+          <span class="where">Live in Skool Community</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Every Other Saturday at 7:45 a.m. Pacific</div>
+        <div>
+          <h3>Saturday Discipleship Gathering</h3>
+          <p>A focused time for teaching, mentorship, spiritual development, and deeper conversation.</p>
+          <span class="where">Live in Skool Community</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Monthly</div>
+        <div>
+          <h3>Mentorship Day</h3>
+          <p>Dedicated mentorship, questions, guidance, activation, and support.</p>
+          <span class="where">Live in Skool Community</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Ongoing</div>
+        <div>
+          <h3>Community Book Club</h3>
+          <p>We read and discuss selected books that support biblical understanding, healing, leadership, identity, and spiritual growth.</p>
+          <span class="where">Live in Skool Community</span>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Beginning 2027</div>
+        <div>
+          <h3>In-Person Community Gatherings</h3>
+          <p>Teaching, prayer, worship, fellowship, healing, deliverance, and meaningful connection beyond the screen.</p>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="slot-when">Coming Soon</div>
+        <div>
+          <h3>Illuminate Global Leadership Circle</h3>
+          <p>A private mentorship community for leaders who desire healthy development, biblical accountability, spiritual maturity, and support as they lead others.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="special">
+      <p class="eyebrow">Join Us</p>
+      <h3>Close the year in surrender. <em>Enter the next one consecrated.</em></h3>
+      <p class="special-lead">
+        Join us for fasting, prayer, reflection, and thanksgiving as we close the year and
+        prepare our hearts for what is ahead.
+      </p>
+
+      <div class="special-dates">
+        <div class="date-card">
+          <p class="when">December 29 to 31</p>
+          <h4>End of Year Corporate Fast</h4>
+          <p>Three days of corporate fasting and prayer.</p>
+          <span class="soon">Details soon</span>
+        </div>
+        <div class="date-card">
+          <p class="when">January 1</p>
+          <h4>New Year Celebration</h4>
+          <p>A day of teaching, prayer, reflection, and thanksgiving.</p>
+          <span class="soon">Details soon</span>
+        </div>
+      </div>
+
+      <a class="btn btn-solid" href="#connect"
+         data-open-tab="general" data-topic="Year-End Fast and January 1 Gathering">Count Me In</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HEALING & FREEDOM ===================== -->
+<section class="healing on-navy" id="healing">
+  <div class="wrap center">
+    <p class="eyebrow">Healing &amp; Freedom</p>
+    <h2 class="section-title">Freedom is <em>part of discipleship.</em></h2>
+    <div class="prose">
+      <p>
+        Discipleship is not only learning biblical truth. It is allowing that truth to reach the
+        wounded, bound, and hidden places of our lives.
+      </p>
+      <p>
+        Inner healing and deliverance help individuals prayerfully address emotional wounds,
+        destructive beliefs, recurring cycles, spiritual oppression, and other barriers that may
+        interfere with their growth.
+      </p>
+      <p>
+        Our desire is to see people receive freedom through Jesus Christ, renew their minds through
+        the Word of God, and become healthy, mature disciples who can run their race unhindered.
+      </p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#personal">Learn About Inner Healing &amp; Deliverance</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PERSONAL MINISTRY ===================== -->
+<section class="personal" id="personal">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Personal Ministry</p>
+      <h2 class="section-title">Support for the season <em>you are walking through.</em></h2>
+      <p class="section-lead">
+        Choose the form of support that best reflects where you are and what you need.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <article class="service">
+        <p class="kicker">Donation Based</p>
+        <h3>Deliverance &amp; Inner Healing Ministry</h3>
+        <p class="sub">Setting the oppressed free through Jesus Christ.</p>
+        <p>
+          These private, prayer-led sessions are designed to help individuals receive freedom from
+          spiritual oppression, bondage, emotional wounds, destructive beliefs, and recurring cycles.
+        </p>
+        <p>
+          Each session lasts approximately 3 to 4 hours and may include repentance,
+          forgiveness, renunciation, inner healing, deliverance prayer, and renewing the mind
+          through the Word of God.
+        </p>
+        <p class="aside">Freely you have received, freely give. Donations are welcomed but never required.</p>
+        <a class="btn btn-solid" href="#connect" data-open-tab="deliverance">Request a Session</a>
+      </article>
+
+      <article class="service">
+        <p class="kicker">Fee Based</p>
+        <h3>Biblical Counseling</h3>
+        <p class="sub">Scripture applied to what you are facing right now.</p>
+        <p>
+          Biblical counseling provides Scripture-based guidance for a present decision, relationship,
+          transition, spiritual concern, or difficult season.
+        </p>
+        <p>
+          Sessions are private and focused. Together we look honestly at the situation, bring
+          biblical truth to bear on it, and identify practical next steps you can actually take.
+          The goal is clarity and steadiness, not a quick answer.
+        </p>
+        <p class="aside">The hourly rate is confirmed with you at booking, before anything is scheduled.</p>
+        <a class="btn btn-solid" href="#connect" data-open-tab="counseling">Request a Session</a>
+      </article>
+
+      <article class="service">
+        <p class="kicker">Identity &middot; Healing &middot; Transformation</p>
+        <h3>Renewed Soul Coaching</h3>
+        <p class="sub">Life purpose coaching for women.</p>
+        <p>
+          Renewed Soul Coaching helps women break toxic cycles and patterns, heal identity, and
+          address childhood wounds that have been running their lives and disrupting their peace
+          and purpose.
+        </p>
+        <p class="aside">Available to believers and non-believers.</p>
+        <a class="btn btn-solid" id="coachingLink" href="#connect">Explore Renewed Soul Coaching</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WATCH ===================== -->
+<section class="watch on-navy" id="watch">
+  <div class="wrap center">
+    <p class="eyebrow">Watch</p>
+    <h2 class="section-title">Illuminate with <em>Jennifer Jones</em></h2>
+    <p class="watch-lead">
+      Biblical teaching, spiritual insight, and honest conversations to help you grow in
+      identity, discernment, healing, and spiritual maturity.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn btn-light" href="https://youtube.com/@illuminatewithjenniferjones" target="_blank" rel="noopener">Watch on YouTube</a>
+    </div>
+
+    <div class="socials">
+      <a class="social" href="https://youtube.com/@illuminatewithjenniferjones" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><use href="#i-youtube"/></svg></a>
+      <a class="social" href="https://www.instagram.com/illuminate_with_jenniferjones" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg></a>
+      <a class="social" href="https://www.facebook.com/illuminatewithjenniferjones" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-facebook"/></svg></a>
+      <a class="social" href="https://www.tiktok.com/@illuminate_w_jenniferj" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tiktok"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOUNDER ===================== -->
+<section class="founder" id="founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <figure class="portrait">
+        <img src="assets/jennifer.jpg" alt="Jennifer Jones">
+      </figure>
+
+      <div>
+        <p class="eyebrow">Meet the Founder</p>
+        <h2 class="section-title">Equipping people to become <em>who God created them to be.</em></h2>
+        <p style="margin-top:1.4rem">
+          Jennifer Jones is a prophetic teacher, mentor, coach, entrepreneur, consultant, marketplace
+          leader, and ministry founder who helps people deepen their relationship with God, recognize
+          His voice, understand their identity, receive healing, and move confidently in their
+          God-given calling.
+        </p>
+        <p>
+          Her ministry journey began in 2012 with Watch and Pray, a weekly women&rsquo;s prayer call
+          created to help women grow in prayer and intercession. From there, her work expanded to
+          leading intercessory teams and teaching others about intimacy with the Holy Spirit, hearing
+          the voice of God, the prophetic, spiritual disciplines, and maintaining a consistent fire
+          for the Lord.
+        </p>
+        <p>
+          Since 2015, Jennifer has counseled, coached, discipled, and mentored both men and women in
+          their spiritual growth, personal development, leadership, and purpose. Her experience spans
+          corporate America, entrepreneurship, consulting, and church leadership, allowing her to
+          bridge the marketplace and ministry while making biblical truth practical for everyday life.
+        </p>
+        <p>
+          Jennifer disciples and mentors others in the way she once desired to be mentored: with
+          encouragement, honesty, biblical truth, prayer, and room to grow. Her heart is not to create
+          dependence upon herself or the ministry, but to help people know God for themselves,
+          discover their place in the Body of Christ, and confidently run the race He has given them.
+        </p>
+        <p>
+          Through Illuminate Global Ministries, Jennifer desires to ignite the fire of God in others,
+          help them keep that fire burning, and equip them to carry it into their homes, workplaces,
+          businesses, ministries, communities, and nations. Her prayer is that those she serves will
+          become mature disciples who strengthen others and continue making disciples wherever God
+          sends them.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESOURCES ===================== -->
+<section class="resources" id="resources">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Resources</p>
+      <h2 class="section-title">Tools for <em>the walk.</em></h2>
+      <p class="section-lead">
+        Books worth reading, prayers worth praying, and resources you can take with you.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+        <p class="res-tag">Recommended Reading</p>
+        <h3>Visit the Bookshelf</h3>
+        <p>
+          A curated Amazon storefront of books that have shaped this ministry, covering Scripture,
+          prayer, spiritual warfare, leadership, identity, healing, relationships, and spiritual growth.
+        </p>
+        <a class="btn btn-ghost" id="amazonLink" href="#connect">Visit the Bookshelf</a>
+      </article>
+
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-download"/></svg></span>
+        <p class="res-tag">Free Downloads</p>
+        <h3>Prayer &amp; Confession Library</h3>
+        <p>Scripture-based prayers and confessions you can print, pray, and keep close.</p>
+        <ul>
+          <li>Spiritual warfare prayers</li>
+          <li>Biblical confessions</li>
+          <li>Healing, finances, and family</li>
+          <li>Identity, peace, and purpose</li>
+        </ul>
+        <a class="btn btn-ghost" id="downloadsLink" href="#connect">Explore Free Downloads</a>
+      </article>
+
+      <article class="card">
+        <span class="icon"><svg viewBox="0 0 24 24"><use href="#i-play-square"/></svg></span>
+        <p class="res-tag soon">Coming Soon</p>
+        <h3>Courses &amp; Teaching</h3>
+        <p>
+          Online courses and practical teachings designed to help you go deeper at your own pace.
+          These are in development now.
+        </p>
+        <a class="btn btn-ghost" href="#connect" data-open-tab="general">Tell Me When They Launch</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Frequently Asked Questions</p>
+      <h2 class="section-title">Questions are <em>welcome.</em></h2>
+      <p class="section-lead">
+        Everything about the community, the gatherings, personal ministry, and how to connect.
+      </p>
+      <div class="cta-row">
+        <button class="btn btn-ghost" id="faqToggle" aria-expanded="false" aria-controls="faqBody">
+          View the Questions
+        </button>
+      </div>
+    </div>
+
+    <div id="faqBody" hidden>
+
+    <div class="faq-group">
+      <h3>About Illuminate Global Ministries</h3>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is Illuminate Global Ministries?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Illuminate Global Ministries is an online discipleship and mentorship community that helps people know God intimately, become rooted in His Word, receive inner healing and freedom, mature spiritually, and become who He created them to be.</p>
+          <p>Through biblical teaching, prayer, mentorship, meaningful community, inner healing, and deliverance, we equip mature disciples who can run their race with courage and carry the light of Christ wherever God sends them.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the mission of Illuminate Global Ministries?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Our mission is to awaken people to a deeper relationship with God, equip them to grow in truth, healing, freedom, character, and spiritual maturity, and send them to serve others and make disciples.</p>
+          <p>We desire to see people carry the light of Christ into their families, communities, workplaces, ministries, and nations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What does &ldquo;Awakened. Equipped. Sent. Illuminate.&rdquo; mean?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p><strong>Awakened</strong> means becoming spiritually aware of God&rsquo;s presence, truth, identity, and purpose.</p>
+          <p><strong>Equipped</strong> means receiving biblical teaching, mentorship, healing, prayer, and practical tools for spiritual growth.</p>
+          <p><strong>Sent</strong> means using what God has placed within you to serve others and fulfill your calling.</p>
+          <p><strong>Illuminate</strong> means carrying the light of Christ wherever you go and igniting faith, freedom, and purpose in others.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What makes Illuminate different from a traditional online Bible study?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Illuminate is more than a place to receive teaching. It is a discipleship and mentorship community where people learn, pray, ask questions, apply Scripture, receive support, confront unhealthy patterns, and grow alongside others.</p>
+          <p>Inner healing and deliverance are also woven into our whole-person approach to discipleship. We do not only want people to gain information. We want them to become healed, free, spiritually mature, and equipped to help strengthen others.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is Illuminate Global Ministries a church?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Illuminate Global Ministries is an online discipleship and mentorship ministry. It is not intended to replace healthy connection and accountability within a local church community.</p>
+          <p>We support the work of the Body of Christ and believe every person and every God-given gift has value and purpose.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-group">
+      <h3>The Discipleship Community</h3>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Who is the community for?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>The community is for people who desire:</p>
+          <ul>
+            <li>A deeper and more intimate relationship with God</li>
+            <li>Practical biblical teaching</li>
+            <li>Prayer and spiritual growth</li>
+            <li>Mentorship and accountability</li>
+            <li>Inner healing and freedom</li>
+            <li>Greater understanding of their identity, gifts, and calling</li>
+            <li>Meaningful connection with other believers</li>
+          </ul>
+          <p>People may join at different stages of their spiritual journey.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to know the Bible well before participating?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>No. You do not need to be a Bible expert.</p>
+          <p>Our goal is to help people learn how to read, understand, and apply Scripture for themselves while developing a consistent relationship with God.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What topics are covered?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Teaching may include:</p>
+          <ul>
+            <li>Bible reading and study</li>
+            <li>Intimacy with God</li>
+            <li>Identity in Christ</li>
+            <li>Hearing God&rsquo;s voice</li>
+            <li>Prayer and intercession</li>
+            <li>Spiritual gifts and the prophetic</li>
+            <li>Spiritual disciplines</li>
+            <li>Inner healing and deliverance</li>
+            <li>Spiritual warfare and discernment</li>
+            <li>Purpose and calling</li>
+            <li>Christlike character</li>
+            <li>Healthy leadership</li>
+          </ul>
+          <p>The teaching is designed to make biblical truth clear, practical, and applicable to everyday life.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How does the online community meet?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>The community grows through live discipleship gatherings, prayer calls, mentorship, teaching, book discussions, practical assignments, resources, and opportunities for questions and connection.</p>
+          <p>Our community is hosted on Skool, and the live gatherings and prayer calls take place on Zoom inside that community.</p>
+          <p>In-person gatherings for fellowship, worship, prayer, teaching, healing, and personal ministry will begin in 2027.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the current community schedule?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p><strong>Women&rsquo;s Prayer Call</strong><br>Mondays from 6:00 to 7:00 a.m. Pacific Time</p>
+          <p><strong>Corporate Prayer Call</strong><br>Wednesdays from 6:00 to 7:00 a.m. Pacific Time</p>
+          <p><strong>Live Discipleship and Mentorship</strong><br>Every other Wednesday at 6:45 p.m. Pacific Time</p>
+          <p><strong>Saturday Discipleship Gathering</strong><br>Every other Saturday at 7:45 a.m. Pacific Time</p>
+          <p><strong>Mentorship Day</strong><br>Once each month</p>
+          <p><strong>Community Book Club</strong><br>Held throughout the year</p>
+          <p>Additional dates and access information will be shared with community members.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are the prayer calls free?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Yes. The weekly women&rsquo;s and corporate prayer calls are free to attend.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can men and women participate?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>The Monday prayer call is specifically for women.</p>
+          <p>The Wednesday corporate prayer call and many other teachings, resources, and ministry opportunities are open to both men and women unless otherwise stated.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I participate if I live outside the United States?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Yes. Most ministry activities are offered online.</p>
+          <p>All scheduled times are listed in Pacific Time, so international participants should confirm the corresponding time in their location.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-group">
+      <h3>Inner Healing and Deliverance</h3>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Why are inner healing and deliverance part of discipleship?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>We believe discipleship reaches the whole person.</p>
+          <p>Biblical teaching helps us understand truth, while inner healing and deliverance address wounds, destructive beliefs, spiritual oppression, recurring cycles, and areas of bondage that may interfere with spiritual growth.</p>
+          <p>Our goal is not simply to help people know more. We want to see people healed, free, spiritually mature, and able to walk in obedience.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is inner healing?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Inner healing is prayer ministry that invites Jesus into places of emotional pain, rejection, trauma, loss, destructive beliefs, and unhealthy patterns.</p>
+          <p>The goal is to receive healing, replace lies with biblical truth, renew the mind, and move forward with greater freedom and wholeness.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is deliverance?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Deliverance is biblical prayer ministry focused on setting the oppressed free through the authority of Jesus Christ.</p>
+          <p>It may address spiritual oppression, bondage, destructive agreements, recurring cycles, and other spiritual barriers that have affected a person&rsquo;s growth and freedom.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What happens during a deliverance and inner healing session?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Sessions are private, prayer-led, and generally last approximately 3 to 4 hours.</p>
+          <p>Depending on the individual&rsquo;s needs, a session may include:</p>
+          <ul>
+            <li>Forgiveness and repentance</li>
+            <li>Renouncing lies, agreements, and destructive patterns</li>
+            <li>Inner healing prayer</li>
+            <li>Deliverance from spiritual oppression</li>
+            <li>Renewing the mind through Scripture</li>
+            <li>Prayer for continued healing and spiritual growth</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is there a charge for deliverance and inner healing?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Deliverance and inner healing ministry is donation-based.</p>
+          <p>Donations are welcomed, but they are never required to receive ministry.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Why is an inquiry or application required?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>The inquiry form helps us understand what support you are seeking, explain the ministry process, prepare prayerfully, and determine whether this form of ministry is appropriate for your needs.</p>
+          <p>Submitting an inquiry does not automatically guarantee an appointment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Does everyone in the discipleship community have to receive deliverance?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>No.</p>
+          <p>Inner healing and deliverance are available forms of personal ministry, but they are not required for participation in the discipleship community.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is deliverance a substitute for medical or mental-health care?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>No. Illuminate Global Ministries does not provide medical treatment, psychiatric care, licensed mental-health therapy, crisis intervention, or emergency services.</p>
+          <p>Our personal ministry is spiritual and pastoral in nature and should not replace appropriate care from licensed professionals.</p>
+          <p>Anyone experiencing an immediate crisis or emergency should contact local emergency services or a qualified professional.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-group">
+      <h3>Other Personal Ministry Services</h3>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is biblical counseling?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Biblical counseling provides Scripture-based guidance for a present decision, relationship, spiritual concern, transition, or difficult season.</p>
+          <p>Sessions focus on applying biblical truth to the situation and identifying practical next steps.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the difference between biblical counseling and Renewed Soul Coaching?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p><strong>Biblical counseling</strong> focuses on a specific present situation and applies Scripture to help you navigate it.</p>
+          <p><strong>Renewed Soul Coaching</strong> helps women identify and change recurring patterns, toxic cycles, beliefs, and survival responses that may be affecting their identity, confidence, relationships, peace, and purpose.</p>
+          <p>Renewed Soul Coaching is available to believers and non-believers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the Illuminate Global Leadership Circle?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>The Illuminate Global Leadership Circle is a private mentorship community being developed for leaders who desire biblical accountability, personal development, healthy leadership practices, spiritual maturity, and support as they lead others.</p>
+          <p>More information will be shared when enrollment opens.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-group">
+      <h3>Resources and Connection</h3>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What resources will be available?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Resources will include:</p>
+          <ul>
+            <li>Free Scripture-based prayers and confessions</li>
+            <li>Spiritual-warfare prayers</li>
+            <li>Prayers for healing, finances, marriage, family, identity, peace, and purpose</li>
+            <li>Downloadable PDFs and guides</li>
+            <li>Online courses and biblical teachings</li>
+            <li>Recommended books through the Amazon storefront</li>
+            <li>Book-club selections and study resources</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How can I submit a prayer request?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Use the Prayer Request form on the website.</p>
+          <p>You will be able to indicate whether your request may be shared with the intercessory prayer team or should remain limited to ministry leadership.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How can I share a testimony?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Use the Share a Testimony form to tell us how the Lord has healed, delivered, restored, strengthened, or met you through the ministry.</p>
+          <p>The form will also ask whether you give permission for your testimony to be shared publicly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is my information confidential?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Personal information, ministry inquiries, counseling requests, and prayer requests are handled with care.</p>
+          <p>Information is shared only as needed for ministry purposes and according to the confidentiality preferences provided on the applicable form.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How can I stay informed?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>Join the email list and follow Illuminate with Jennifer Jones on YouTube, Instagram, Facebook, and TikTok for teachings, announcements, prayer opportunities, upcoming gatherings, and new resources.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How can I contact Illuminate Global Ministries?<span class="sign"></span></button>
+        <div class="faq-a">
+          <p>For general questions, speaking or partnership inquiries, resources, website assistance, or other concerns, email info@igministries.com.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONNECT ===================== -->
+<section class="connect" id="connect">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Connect With Us</p>
+      <h2 class="section-title">We would be honored <em>to hear from you.</em></h2>
+    </div>
+
+    <div class="connect-grid">
+      <div class="connect-menu" role="tablist" aria-label="Contact options">
+        <button class="cmenu" role="tab" aria-selected="true"  data-tab="prayer">
+          <span class="cm-title">Prayer Request</span>
+          <span class="cm-sub">Tell us how we can pray for you.</span>
+        </button>
+        <button class="cmenu" role="tab" aria-selected="false" data-tab="deliverance">
+          <span class="cm-title">Deliverance Ministry</span>
+          <span class="cm-sub">Inner healing and deliverance inquiry.</span>
+        </button>
+        <button class="cmenu" role="tab" aria-selected="false" data-tab="counseling">
+          <span class="cm-title">Biblical Counseling</span>
+          <span class="cm-sub">Scripture-based guidance for a season.</span>
+        </button>
+        <button class="cmenu" role="tab" aria-selected="false" data-tab="community">
+          <span class="cm-title">The Community</span>
+          <span class="cm-sub">Join the discipleship waitlist.</span>
+        </button>
+        <button class="cmenu" role="tab" aria-selected="false" data-tab="testimony">
+          <span class="cm-title">Share a Testimony</span>
+          <span class="cm-sub">Tell us what the Lord has done.</span>
+        </button>
+        <button class="cmenu" role="tab" aria-selected="false" data-tab="general">
+          <span class="cm-title">General Questions</span>
+          <span class="cm-sub">Speaking, partnership, or anything else.</span>
+        </button>
+      </div>
+
+      <div class="connect-forms">
+    <!-- Prayer -->
+    <div class="panel active" id="panel-prayer" role="tabpanel" data-subject="Prayer Request">
+      <p class="intro">Your request will be shared with our intercessory prayer team and handled according to your confidentiality preference.</p>
+      <div class="field"><label for="p-name">Name</label><input type="text" id="p-name" data-label="Name"></div>
+      <div class="field"><label for="p-email">Email</label><input type="email" id="p-email" data-label="Email"></div>
+      <label class="check"><input type="checkbox" id="p-conf" data-label="Confidential" data-checked-text="Please keep this request limited to ministry leadership"><span>Please keep this request confidential to ministry leadership</span></label>
+      <div class="field"><label for="p-request">Your prayer request</label><textarea id="p-request" data-label="Prayer Request"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Submit a Prayer Request</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+
+    <!-- Deliverance -->
+    <div class="panel" id="panel-deliverance" role="tabpanel" data-subject="Deliverance and Inner Healing Inquiry">
+      <p class="intro">Sessions are private, prayer-led, and last approximately 3 to 4 hours. This ministry is donation-based. Submitting an inquiry does not automatically guarantee an appointment.</p>
+      <div class="field"><label for="d-name">Name</label><input type="text" id="d-name" data-label="Name"></div>
+      <div class="field"><label for="d-email">Email</label><input type="email" id="d-email" data-label="Email"></div>
+      <div class="field"><label for="d-location">City and country</label><input type="text" id="d-location" data-label="Location"></div>
+      <div class="field"><label for="d-prior">Have you received this kind of ministry before?</label>
+        <select id="d-prior" data-label="Prior Ministry"><option>No</option><option>Yes</option><option>Not sure</option></select>
+      </div>
+      <div class="field"><label for="d-situation">What support are you seeking?</label><textarea id="d-situation" data-label="Support Sought"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Request a Session</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+
+    <!-- Counseling -->
+    <div class="panel" id="panel-counseling" role="tabpanel" data-subject="Biblical Counseling Request">
+      <p class="intro">Biblical counseling is a fee-based service. The hourly rate is confirmed with you at booking, before anything is scheduled.</p>
+      <div class="field"><label for="c-name">Name</label><input type="text" id="c-name" data-label="Name"></div>
+      <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" data-label="Email"></div>
+      <div class="field"><label for="c-timezone">Your time zone</label><input type="text" id="c-timezone" data-label="Time Zone"></div>
+      <div class="field"><label for="c-about">What would you like to work through?</label><textarea id="c-about" data-label="Details"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Request a Session</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+
+    <!-- Community -->
+    <div class="panel" id="panel-community" role="tabpanel" data-subject="Discipleship Community Waitlist">
+      <p class="intro">Receive updates about the Illuminate Discipleship Community, upcoming gatherings, and enrollment.</p>
+      <div class="field"><label for="m-name">Name</label><input type="text" id="m-name" data-label="Name"></div>
+      <div class="field"><label for="m-email">Email</label><input type="email" id="m-email" data-label="Email"></div>
+      <div class="field"><label for="m-why">What are you hoping to find?</label><textarea id="m-why" data-label="Hoping to Find"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Join the Waitlist</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+
+    <!-- Testimony -->
+    <div class="panel" id="panel-testimony" role="tabpanel" data-subject="Testimony">
+      <p class="intro">Tell us how the Lord has healed, delivered, restored, strengthened, or met you through this ministry.</p>
+      <div class="field"><label for="t-name">Name</label><input type="text" id="t-name" data-label="Name"></div>
+      <div class="field"><label for="t-email">Email</label><input type="email" id="t-email" data-label="Email"></div>
+      <div class="field"><label for="t-permission">May we share your story publicly?</label>
+        <select id="t-permission" data-label="Permission to Share">
+          <option>Yes, you may share my story publicly</option>
+          <option>Yes, but please do not use my name</option>
+          <option>No, please keep this private</option>
+        </select>
+      </div>
+      <div class="field"><label for="t-story">Your testimony</label><textarea id="t-story" data-label="Testimony"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Share Your Testimony</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+
+    <!-- General -->
+    <div class="panel" id="panel-general" role="tabpanel" data-subject="General Question">
+      <p class="intro">For general questions, partnerships, speaking inquiries, resources, or website assistance.</p>
+      <div class="field"><label for="g-name">Name</label><input type="text" id="g-name" data-label="Name"></div>
+      <div class="field"><label for="g-email">Email</label><input type="email" id="g-email" data-label="Email"></div>
+      <div class="field"><label for="g-topic">What are you contacting us about?</label>
+        <select id="g-topic" data-label="Topic">
+          <option>General Question</option>
+          <option>Year-End Fast and January 1 Gathering</option>
+          <option>Discipleship Community</option>
+          <option>Deliverance and Inner Healing</option>
+          <option>Biblical Counseling</option>
+          <option>Renewed Soul Coaching</option>
+          <option>Leadership Circle</option>
+          <option>Resource or Course</option>
+          <option>Speaking or Partnership Inquiry</option>
+          <option>Technical Support</option>
+        </select>
+      </div>
+      <div class="field"><label for="g-message">Your message</label><textarea id="g-message" data-label="Message"></textarea></div>
+      <button class="btn btn-solid btn-block" data-send>Send Message</button>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your message goes straight to info@igministries.com.</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GIVE ===================== -->
+<section class="give" id="give">
+  <div class="wrap">
+    <p class="eyebrow">Give</p>
+    <h2 class="section-title">Partner with <em>this work</em></h2>
+    <p class="section-lead">
+      Deliverance and inner healing ministry is offered on a donation basis, and it stays that way
+      because people choose to give. Every gift helps keep that door open for someone seeking freedom.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#" id="giveLink">Give Through PayPal</a>
+      <a class="btn btn-outline-light" href="#connect" data-open-tab="general">Ask a Question</a>
+    </div>
+    <p class="give-note">Questions about giving? Email info@igministries.com.</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <img class="footer-mark" src="assets/igm-mark-light.png" alt="Illuminate Global Ministries">
+        <p>
+          An online discipleship and mentorship community helping people know God intimately,
+          become rooted in His Word, receive inner healing and freedom, mature spiritually, and
+          become who He created them to be.
+        </p>
+        <p class="footer-tagline">Discipleship &middot; Mentorship &middot; Prayer &middot; Inner Healing &middot; Deliverance &middot; Activation</p>
+        <p class="email"><a href="mailto:info@igministries.com">info@igministries.com</a></p>
+
+        <div class="footer-socials">
+          <a class="social" href="https://youtube.com/@illuminatewithjenniferjones" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><use href="#i-youtube"/></svg></a>
+          <a class="social" href="https://www.instagram.com/illuminate_with_jenniferjones" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-instagram"/></svg></a>
+          <a class="social" href="https://www.facebook.com/illuminatewithjenniferjones" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-facebook"/></svg></a>
+          <a class="social" href="https://www.tiktok.com/@illuminate_w_jenniferj" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tiktok"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#teach">Teaching</a></li>
+          <li><a href="#rhythm">Community Rhythm</a></li>
+          <li><a href="#personal">Personal Ministry</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#watch">Watch</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#connect" data-open-tab="prayer">Prayer Request</a></li>
+          <li><a href="#connect" data-open-tab="testimony">Share a Testimony</a></li>
+          <li><a href="#connect" data-open-tab="general">Contact</a></li>
+          <li><a href="#community">Join the Community</a></li>
+          <li><a href="#give">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Illuminate Global Ministries. All rights reserved.</span>
+      <span>igministries.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
