@@ -47,6 +47,21 @@ are listed in a comment right above them. Change the two values and
 the whole site updates.
 
 
+LINK PREVIEW AND ICONS
+----------------------
+assets/og-image.png is what appears when the site is shared on
+Facebook, Instagram, iMessage, or LinkedIn. To change it, replace
+that file at exactly 1200 by 630 pixels.
+
+assets/favicon.png is the little flame in the browser tab.
+assets/apple-touch-icon.png is the icon if someone saves the site
+to their phone home screen.
+
+Note: Facebook caches previews. If you share the link and see the
+old blank preview, paste the address into Facebook's Sharing
+Debugger and click Scrape Again.
+
+
 SCROLL ANIMATION
 ----------------
 Headings, cards, and images fade and lift into place as you scroll,
