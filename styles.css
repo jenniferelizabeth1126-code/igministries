@@ -247,6 +247,12 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   color:rgba(251,248,242,.9);font-size:.98rem;
 }
 .price-list li:last-child{border-bottom:0}
+.price-note{
+  color:rgba(251,248,242,.82);font-size:.95rem;line-height:1.65;
+  margin:0 0 1.6rem;padding:1rem 1.1rem;text-align:left;
+  background:rgba(251,248,242,.06);border-left:2px solid var(--gold-light);border-radius:2px;
+}
+.price-note strong{color:var(--gold-light);font-weight:600}
 .price-list svg{width:1.05rem;height:1.05rem;color:var(--gold-light);flex:none;margin-top:.32rem}
 
 /* ==========================================================================
