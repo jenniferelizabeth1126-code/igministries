@@ -240,6 +240,12 @@ section{padding:clamp(4rem,9vh,6.5rem) 0}
   margin-left:.6rem;vertical-align:middle;
 }
 .price-card > p{color:rgba(251,248,242,.82);margin-top:1.2rem;font-size:1rem}
+.price-card > p.price-after{
+  font-family:var(--label);font-weight:500;
+  font-size:.84rem;line-height:1.65;letter-spacing:.03em;
+  color:var(--gold-light);margin-top:.9rem;
+  max-width:26rem;margin-left:auto;margin-right:auto;
+}
 .price-list{list-style:none;margin:1.9rem 0;text-align:left}
 .price-list li{
   display:flex;gap:.85rem;align-items:flex-start;
