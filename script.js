@@ -13,7 +13,7 @@ var FORM_ENDPOINT = 'https://formspree.io/f/mjybkpbl';
 var PAYPAL_URL    = 'https://paypal.me/jjonestheartist';   /* your PayPal giving link */
 var AMAZON_URL    = '';   /* your Amazon storefront */
 var DOWNLOADS_URL = 'resources.html';   /* where free downloads live */
-var SKOOL_URL     = '';   /* your Skool community */
+var SKOOL_URL     = 'https://www.skool.com/illuminate-global-ministries-8644/about';   /* your Skool community */
 var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching page */
 
 /* ========================================================================== */
