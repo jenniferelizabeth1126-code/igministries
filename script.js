@@ -67,7 +67,8 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
       '.verse-block', '.price-card', '.platform-note', '.schedule',
       '.special', '.card', '.topic', '.value', '.service',
       '.member-box', '.portrait', '.faq-group', '.faq-list',
-      '.connect-grid', '.socials', '.give-note'
+      '.connect-grid', '.socials', '.give-note',
+      '.dl-group-title', '.dl-group-lede', '.dl-item', '.page-head-note'
     ].join(',');
 
     var picked = [];
