@@ -11,7 +11,7 @@ var CONTACT_EMAIL = 'info@igministries.com';
 var FORM_ENDPOINT = 'https://formspree.io/f/mjybkpbl';
 
 var PAYPAL_URL    = 'https://paypal.me/jjonestheartist';   /* your PayPal giving link */
-var AMAZON_URL    = '';   /* your Amazon storefront */
+var AMAZON_URL    = 'https://www.amazon.com/hz/wishlist/ls/2KMX0LWWZKCBY?ref_=wl_share';   /* your Amazon list */
 var DOWNLOADS_URL = 'resources.html';   /* where free downloads live */
 var SKOOL_URL     = 'https://www.skool.com/illuminate-global-ministries-8644/about';   /* your Skool community */
 var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching page */
