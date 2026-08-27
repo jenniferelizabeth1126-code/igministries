@@ -11,6 +11,8 @@ var CONTACT_EMAIL = 'info@igministries.com';
 var FORM_ENDPOINT = 'https://formspree.io/f/mjybkpbl';
 
 var PAYPAL_URL    = 'https://paypal.me/jjonestheartist';   /* your PayPal giving link */
+var CASHAPP_URL   = 'https://cash.app/$IlluminateGlobal';   /* your Cash App giving link */
+var VENMO_URL     = 'https://venmo.com/u/illuminateglobalministries';   /* your Venmo giving link */
 var AMAZON_URL    = 'https://www.amazon.com/hz/wishlist/ls/2KMX0LWWZKCBY?ref_=wl_share';   /* your Amazon list */
 var DOWNLOADS_URL = 'resources.html';   /* where free downloads live */
 var SKOOL_URL     = 'https://www.skool.com/illuminate-global-ministries-8644/about';   /* your Skool community */
@@ -68,6 +70,7 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
       '.special', '.card', '.topic', '.value', '.service',
       '.member-box', '.portrait', '.faq-group', '.faq-list',
       '.connect-grid', '.socials', '.give-note',
+      '.channel', '.way', '.give-thanks', '.give-disclosure',
       '.dl-group-title', '.dl-group-lede', '.dl-item', '.page-head-note'
     ].join(',');
 
@@ -320,6 +323,8 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
   }
 
   setLink('giveLink', PAYPAL_URL, 'Giving Inquiry');
+  setLink('cashappLink', CASHAPP_URL, 'Giving Inquiry');
+  setLink('venmoLink', VENMO_URL, 'Giving Inquiry');
   setLink('amazonLink', AMAZON_URL, 'Recommended Reading');
   setLink('downloadsLink', DOWNLOADS_URL, 'Free Downloads');
   setLink('skoolLink', SKOOL_URL, 'Discipleship Community');
