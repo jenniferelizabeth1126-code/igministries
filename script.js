@@ -71,7 +71,9 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
       '.member-box', '.portrait', '.faq-group', '.faq-list',
       '.connect-grid', '.socials', '.give-note',
       '.channel', '.way', '.give-thanks', '.give-disclosure',
-      '.dl-group-title', '.dl-group-lede', '.dl-item', '.page-head-note'
+      '.dl-group-title', '.dl-group-lede', '.dl-item', '.page-head-note',
+      '.community-copy', '.steps li', '.founder-copy', '.tabs', '.founder-quote', '.ministry-head',
+      '.band-title', '.band-verse', '.values-line', '.slider-nav', '.faq-item'
     ].join(',');
 
     var picked = [];
@@ -95,14 +97,17 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
           el.classList.add('reveal');
 
           /* two-column sections come in from the sides */
-          if (el.matches('.about-card, .verse-block, .member-box')) {
+          if (el.matches('.band-title, .band-verse')) {
+            el.classList.add('zoom');
+          } else if (el.matches('.about-card, .verse-block, .member-box, .community .price-card')) {
             el.classList.add('from-right');
           } else if (el.matches('.portrait')) {
             el.classList.add('from-left');
           }
 
           /* stagger, but cap it so nothing lags far behind */
-          el.style.transitionDelay = Math.min(i * 70, 420) + 'ms';
+          el.style.transitionDelay = el.matches('.offer') ? '0ms' : Math.min(i * 70, 420) + 'ms';
+          if (el.matches('.offer, .portrait')) el.style.transitionDuration = '1s';
           picked.push(el);
         });
       }
@@ -329,4 +334,96 @@ var COACHING_URL  = 'https://renewedsoul.co/';   /* your Renewed Soul Coaching p
   setLink('downloadsLink', DOWNLOADS_URL, 'Free Downloads');
   setLink('skoolLink', SKOOL_URL, 'Discipleship Community');
   setLink('coachingLink', COACHING_URL, 'Renewed Soul Coaching');
+
+
+
+  /* ==========================================================================
+     OCTOBER 2026 REFRESH: gentle parallax, stacked ministry cards, rhythm tabs
+     ========================================================================== */
+  var reduceMotion = window.matchMedia &&
+                     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var header = document.getElementById('siteHeader');
+  var cue = document.querySelector('.scroll-cue');
+  var heroInner = document.getElementById('heroInner');
+  var layers = Array.prototype.slice.call(document.querySelectorAll('[data-speed]'));
+  var offers = Array.prototype.slice.call(document.querySelectorAll('.offer'));
+  offers.forEach(function (o, i) { o.style.setProperty('--i', i); });
+  var pTicking = false;
+
+  function onFrame() {
+    pTicking = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    var vh = window.innerHeight;
+    if (header) header.classList.toggle('scrolled', y > 30);
+    if (cue) cue.style.opacity = y > 40 ? '0' : '1';
+    if (reduceMotion) return;
+
+    layers.forEach(function (el) {
+      var box = el.parentElement.getBoundingClientRect();
+      if (box.bottom < -200 || box.top > vh + 200) return;
+      var offset = (box.top + box.height / 2 - vh / 2) * -(parseFloat(el.dataset.speed) || 0.2);
+      if (el.classList.contains('rays')) el.style.marginTop = offset + 'px';
+      else el.style.transform = 'translate3d(0,' + offset.toFixed(1) + 'px,0)';
+    });
+
+    if (heroInner && y < vh * 1.2) {
+      var t = Math.min(y / (vh * 0.8), 1);
+      heroInner.style.transform = 'translate3d(0,' + (y * 0.28) + 'px,0)';
+      heroInner.style.opacity = String(1 - t * 0.9);
+    }
+
+    offers.forEach(function (o, i) {
+      var next = offers[i + 1];
+      if (!next || getComputedStyle(o).position !== 'sticky') { o.style.scale = ''; o.style.filter = ''; return; }
+      var a = o.getBoundingClientRect(), b = next.getBoundingClientRect();
+      var cover = Math.min(Math.max((a.bottom - b.top) / a.height, 0), 1);
+      o.style.scale = String(1 - cover * 0.05);
+      o.style.filter = 'brightness(' + (1 - cover * 0.3) + ')';
+    });
+  }
+  function requestFrame() {
+    if (pTicking) return;
+    pTicking = true;
+    requestAnimationFrame(onFrame);
+  }
+  window.addEventListener('scroll', requestFrame, { passive: true });
+  window.addEventListener('resize', requestFrame, { passive: true });
+  requestFrame();
+
+  /* ministry cards slide in, and slide back out when you scroll up past them */
+  if (offers.length) {
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      offers.forEach(function (o) { o.classList.add('in'); });
+    } else {
+      var offerObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) e.target.classList.add('in');
+          else if (e.boundingClientRect.top > 0) e.target.classList.remove('in');
+        });
+      }, { threshold: 0.15 });
+      offers.forEach(function (o) { offerObs.observe(o); });
+    }
+  }
+
+  /* community rhythm tabs */
+  var rTabs = Array.prototype.slice.call(document.querySelectorAll('.tabs .tab'));
+  function showRhythm(tab) {
+    rTabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (!panel) return;
+      panel.hidden = !on;
+      panel.classList.toggle('active', on);
+    });
+  }
+  rTabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { showRhythm(tab); });
+    tab.addEventListener('keydown', function (e) {
+      var next = null;
+      if (e.key === 'ArrowRight') next = rTabs[(i + 1) % rTabs.length];
+      if (e.key === 'ArrowLeft') next = rTabs[(i - 1 + rTabs.length) % rTabs.length];
+      if (next) { e.preventDefault(); next.focus(); showRhythm(next); }
+    });
+  });
 })();
